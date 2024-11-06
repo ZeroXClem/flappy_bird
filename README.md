@@ -1,6 +1,6 @@
-# Enhanced Flappy Bird
+# Flappy Bird
 
-An enhanced version of the classic Flappy Bird game with additional features and customization options.
+An instance of the classic Flappy Bird game with additional features and customization options.
 
 ## Features
 
