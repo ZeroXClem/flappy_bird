@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Flappy Bird</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Start Menu -->
+    <div id="start-menu" class="menu">
+        <img src="assets/images/message.png" alt="Message" id="start-message">
+        <div class="menu-section">
+            <label for="bird-skin">Choose Bird Skin:</label>
+            <select id="bird-skin">
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div class="menu-section">
+            <label for="background-theme">Choose Background Theme:</label>
+            <select id="background-theme">
+                <option value="day">Day</option>
+                <option value="night">Night</option>
+            </select>
+        </div>
+        <div class="menu-section">
+            <label for="difficulty">Choose Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <button id="start-button">Start Game</button>
+    </div>
+    
+    <!-- Game Over Screen -->
+    <div id="game-over" class="menu" style="display: none;">
+        <img src="assets/images/gameover.png" alt="Game Over" id="gameover-image">
+        <div class="score-section">
+            <div id="final-score">Score: 0</div>
+            <div id="final-level">Level: 1</div>
+            <div id="high-score">High Score: 0</div>
+            <div id="score-display-over"></div>
+        </div>
+        <button id="replay-button">Play Again</button>
+    </div>
+    
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    
+    <!-- Score and Level Displays -->
+    <div id="score-display"></div>
+    <div id="level"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
